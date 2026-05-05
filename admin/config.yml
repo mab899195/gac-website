@@ -1,0 +1,61 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/products"
+public_folder: "images/products"
+
+collections:
+  - name: "pull-handles"
+    label: "Pull Handles"
+    folder: "_data/pull-handles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Product Name", name: "name", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", media_folder: "/images/products/pull-handles", public_folder: "images/products/pull-handles" }
+
+  - name: "plate-handles"
+    label: "Plate Handles"
+    folder: "_data/plate-handles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Product Name", name: "name", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", media_folder: "/images/products/plate-handles", public_folder: "images/products/plate-handles" }
+
+  - name: "rose-handles"
+    label: "Rose Handles"
+    folder: "_data/rose-handles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Product Name", name: "name", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", media_folder: "/images/products/rose-handles", public_folder: "images/products/rose-handles" }
+
+  - name: "knobs"
+    label: "Knobs"
+    folder: "_data/knobs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Product Name", name: "name", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", media_folder: "/images/products/knobs", public_folder: "images/products/knobs" }
+
+  - name: "knockers"
+    label: "Knockers"
+    folder: "_data/knockers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Product Name", name: "name", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", media_folder: "/images/products/knockers", public_folder: "images/products/knockers" }
+
+  - name: "window-handles"
+    label: "Window Handles & Accessories"
+    folder: "_data/window-handles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Product Name", name: "name", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", media_folder: "/images/products/window-handles", public_folder: "images/products/window-handles" }
